@@ -8,6 +8,15 @@ function App() {
 
   return (
     <>
+
+      {/* NAVIGATION BAR: maybe potential different overlays for different games */}
+      {/* bracket stuff */}
+
+
+      {/* Take and Clear Overlay buttons to show or not show*/}
+
+      {/* Components used for each game */}
+      
       <div>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
