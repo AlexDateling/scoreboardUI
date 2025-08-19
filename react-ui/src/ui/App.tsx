@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import GameplayOverlayController from './components/GameplayOverlayController/GameplayOverlayController'
+import MenuOverlay from './components/MenuOverlay.ts/MenuOverlay'
+import { Card } from 'react-bootstrap'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,25 +18,15 @@ function App() {
       {/* Take and Clear Overlay buttons to show or not show*/}
 
       {/* Components used for each game */}
-      
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <GameplayOverlayController/>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+       <Card style={{ width: '100%' }}>
+
+          <MenuOverlay/>
+            
+   
+        </Card>
+
+
     </>
   )
 }
